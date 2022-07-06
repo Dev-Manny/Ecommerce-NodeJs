@@ -16,6 +16,8 @@ const { errorHandler } = require("./utils");
 const User = require("./models/user");
 
 const app = express();
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./docs');
 
 app.use(helmet());
 
@@ -29,6 +31,8 @@ app.use("/product", productRoutes);
 app.use("/category", categoryRoutes);
 app.use("/order", orderRoutes);
 app.use("/cart", cartRoutes);
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Creating PaymentIntent to send the ClientSecret to the client
 app.post(
