@@ -27,10 +27,10 @@ app.use(cors());
 
 app.use("/admin", adminRoutes);
 app.use("/user", userRoutes);
-app.use("/product", productRoutes);
-app.use("/category", categoryRoutes);
-app.use("/order", orderRoutes);
-app.use("/cart", cartRoutes);
+app.use("/products", productRoutes);
+app.use("/categories", categoryRoutes);
+app.use("/orders", orderRoutes);
+app.use("/carts", cartRoutes);
 
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 

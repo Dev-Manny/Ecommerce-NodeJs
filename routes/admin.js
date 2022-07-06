@@ -9,11 +9,11 @@ const {
 } = require("../controllers/admin");
 const checkAuth = require("../middlewares/checkAuth");
 
-router.post("/login", postLogin);
-router.get("/is-login", checkAuth(), getIsLogin);
-router.get("/product", checkAuth(), getProducts);
-router.get("/product/:id", checkAuth(), getProduct);
-router.get("/order", checkAuth(), getOrders);
-router.get("/order/:id", checkAuth(), getOrder);
+router.post("/auth/login", postLogin);
+router.get("/auth/is-login", checkAuth(), getIsLogin);
+router.get("/products", checkAuth(), getProducts);
+router.get("/products/:id", checkAuth(), getProduct);
+router.get("/orders", checkAuth(), getOrders);
+router.get("/orders/:id", checkAuth(), getOrder);
 
 module.exports = router;
