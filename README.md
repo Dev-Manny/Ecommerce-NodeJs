@@ -2,7 +2,7 @@
 
 ## Demo Website
 
-- 👉 Heroku : [https://placeholder.herokuapp.com](https://placeholder.herokuapp.com)
+- 👉 Heroku : [https://manny-commerce.herokuapp.com/](https://manny-commerce.herokuapp.com/)
 
 ## Run Locally
 
@@ -37,9 +37,9 @@ $ npm start
 
 ### 5. Admin Login
 
-- Run http://localhost:8080/admin/login
-- Enter admin email and password and click signin
-
+- Run https://manny-commerce.herokuapp.com/admin/login
+- email: admin@admin.com
+- password: 
 ## Support
 
 - Q/A: 
