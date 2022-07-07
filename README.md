@@ -9,8 +9,8 @@
 ### 1. Clone repo
 
 ```
-$ git clone https://github.com/maniecodes/Ecommerce-NodeJs.git
-$ cd Ecommerce-NodeJs
+$ git clone https://github.com/maniecodes/manny-commerce-services.git
+$ cd manny-commerce-services
 ```
 
 ### 2. Setup MongoDB
